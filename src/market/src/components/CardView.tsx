@@ -11,7 +11,7 @@ interface IProps {
 export const CardView: FunctionComponent<IProps> = ({categoryP}): any | null => {
   const [search, setSearch] = React.useState("");
   const [data, setData] = React.useState([]);
-  const [category, setCategory] = React.useState("");
+  const [category, setCategory] = React.useState(" ");
 
   useEffect(() => {
     getAds();
