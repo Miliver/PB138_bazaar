@@ -1,5 +1,5 @@
 import React from "react";
-import {Grid, ThemeProvider, Paper, createMuiTheme, Switch as DarkSwitch} from "@material-ui/core";
+import {ThemeProvider, Paper, createMuiTheme, Switch as DarkSwitch} from "@material-ui/core";
 import {Header} from "./Header";
 import {CardView} from "./CardView";
 import {AddAd} from "./AddAd";
@@ -10,7 +10,6 @@ import {Provider} from "mobx-react";
 import {createStores} from "../stores/CreateStores";
 import Footer from "./Footer";
 import "./../styles/App.scss";
-import { light } from "@material-ui/core/styles/createPalette";
 
 
 //darkmode - clashes with mobX provider

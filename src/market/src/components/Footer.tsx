@@ -1,6 +1,6 @@
 import React from "react";
 import "./../styles/App.scss";
-import { Grid, Typography, Switch } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 export default function Footer() {
   return (

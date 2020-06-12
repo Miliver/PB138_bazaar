@@ -1,4 +1,4 @@
-import React, { Component, FunctionComponent } from "react";
+import React, { FunctionComponent } from "react";
 import { AppBar, Toolbar, Typography, Grid } from "@material-ui/core";
 import AddIcon from '@material-ui/icons/Add';
 import "./../styles/App.scss";

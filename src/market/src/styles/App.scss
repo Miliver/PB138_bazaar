@@ -63,18 +63,6 @@ $dark-color: rgb(5, 14, 131);
   margin: 10px;
 }
 
-/* product details */
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 20px;
-}
-
-.gallery img {
-  width: 100%;
-}
-
 .addAd-wrapper {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -82,6 +70,27 @@ $dark-color: rgb(5, 14, 131);
 
 .add-detail--name {
   font-size: 2rem;
+}
+
+/* product details */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  // display: grid
+  // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  // grid-gap: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+}
+
+.gallery img {
+  padding-top: 4px;
+  width: 100%;
+  height: 100%;
 }
 
 /* Footer */

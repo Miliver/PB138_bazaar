@@ -1,14 +1,10 @@
 import React, {Component} from "react";
 import {RouteComponentProps} from "react-router";
-import {AdStore} from "../stores/AdStore";
 import "./../styles/App.scss";
 
 import {
     Container,
-    Grid,
     Paper,
-    GridList,
-    GridListTile,
 } from "@material-ui/core";
 import "./../styles/App.scss";
 
@@ -31,6 +27,16 @@ export class AdDetails extends Component<RouteComponentProps<RouteParams>, IAdDe
             gallery: []
         }
     }
+
+    formatDate = (date: string) => {
+      let ret = date.substring(8,2);
+      ret += "/";
+      ret += date.substring(5,2);
+      ret += "/";
+      ret += date.substring(0,4);
+      return ret;
+    }
+    
 
     gallery: Array<string> = []
 
@@ -71,7 +77,7 @@ export class AdDetails extends Component<RouteComponentProps<RouteParams>, IAdDe
                         <h2>Price:</h2>
                         <p>{price} Kč</p>
                         <h2>Published on:</h2>
-                        <p>{date.toLocaleString("en-US")}</p>
+                        <p>{date}</p>
                         <h2>Contact details:</h2>
                         <div>
                             Name: {contact_name} {contact_surname}
@@ -85,7 +91,7 @@ export class AdDetails extends Component<RouteComponentProps<RouteParams>, IAdDe
                     <div className="gallery">
                         {this.state.gallery.map((imageLink) => {
                             return (
-                                <img src={imageLink} alt="Image Gallery"/>
+                                <img src={imageLink} alt="Image Gallery" key={imageLink}/>
                             )
                         })}
                     </div>

@@ -3,7 +3,6 @@ import { Grid, Input, Container, Switch, Button } from "@material-ui/core";
 import { CardItem } from "./CardItem";
 import { Link } from "react-router-dom";
 import "./../styles/App.scss";
-import { shouldCompute } from "mobx/lib/internal";
 
 interface IProps {
   categoryP: string;
