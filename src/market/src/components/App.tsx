@@ -1,6 +1,6 @@
 import React from "react";
 import {Grid, ThemeProvider, Paper, createMuiTheme, Switch as DarkSwitch} from "@material-ui/core";
-import Header from "./Header";
+import {Header} from "./Header";
 import {CardView} from "./CardView";
 import {AddAd} from "./AddAd";
 import {Categories} from "./Categories";
@@ -40,7 +40,7 @@ function App() {
                   <Route path="/addoffer" component={AddAd} />
                   <Route path="/categories" component={Categories} />
                   <Route path="/:id" component={AdDetails} />
-                  <Route path="/" component={() => <CardView categoryP= ""/>} />
+                  <Route path="/" component={() => <CardView categoryP= "" shouldRender= {true}/>} />
                 </Switch>
               </BrowserRouter>
               

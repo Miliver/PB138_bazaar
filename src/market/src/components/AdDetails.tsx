@@ -17,6 +17,7 @@ interface RouteParams {
     id: string;
 }
 
+
 interface IAdDetailsState {
     gallery: Array<string>
 }
@@ -88,6 +89,7 @@ export class AdDetails extends Component<RouteComponentProps<RouteParams>, IAdDe
                             )
                         })}
                     </div>
+
 
                 </Paper>
             </Container>
