@@ -138,7 +138,7 @@ export class AddAd extends Component<IAddAdProps, IAddAdState> {
             this.formValidation = false;
         }
 
-        if (this.state.phoneInput.length < 12) {
+        if (this.state.phoneInput.length < 9) {
             message = message + "\nEnter a valid phone number.";
             this.formValidation = false;
         }
