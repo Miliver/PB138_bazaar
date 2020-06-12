@@ -48,6 +48,7 @@ export const CardItem: FunctionComponent<IProps> = ({
     const url = {
       pathname: `/${id}`,
       state: {
+        id: id,
         name: name,
         description: description,
         price: price,
